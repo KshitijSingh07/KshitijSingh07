@@ -1,0 +1,42 @@
+<% layout("./layouts/boilerplate.ejs") %>
+<body>
+    <h2>Edit your Listing</h2>
+    <form class="mb-3" method="post" action="/listings/<%=data._id%>?_method=PUT" enctype="multipart/form-data">
+        <div class="mb-3">
+        <label for="title" class="form-label">Title:</label>
+        <input type="text" class="form-control" id="title" name="listing[title]" value="<%=data.title %>">
+        </div>
+        
+        <div class="mb-3">
+        <label class="form-label" for="description">Description:</label>
+        <textarea id="description" class="form-control" name="listing[description]"><%=data.description %></textarea>
+        </div>
+        
+        <div class="mb-3">
+            <label for="image" class="form-label">Upload Image</label>
+            <input type="file" class="form-control" id="image" name="listing[image]" placeholder="imageURL">
+            <div class="valid-feedback">Valid.</div>
+            <div class="invalid-feedback">Upload a image.</div>
+        </div>
+        
+        <div class="wrap">
+        <div class="mb-3" style="width: 40%; margin-right: 1rem;">
+        <label class="form-label" for="price">Price:</label>
+        <input type="number"class="form-control" id="price" name="listing[price]"  value="<%=data.price%>">
+        </div>
+        
+        <div class="mb-3" style="width: 60%;">
+        <label class="form-label" for="location">Location:</label>
+        <input type="text" class="form-control" id="location" name="listing[location]" value="<%=data.location %>">
+        </div>
+        </div>
+        
+        <div class="mb-3">
+        <label class="form-label" for="country">Country:</label>
+        <input type="text" class="form-control" id="country" name="listing[country]" value="<%=data.country%>">
+        </div>
+        
+        <button class="btn btn-danger">Save</button>
+    </form>
+    
+</body>

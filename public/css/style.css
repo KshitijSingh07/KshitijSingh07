@@ -1,0 +1,102 @@
+body{
+    display: flex;
+    margin: 0;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #adb5bd !important;
+}
+
+.container{
+    flex-grow: 1;
+}
+
+.card a{
+    text-decoration: none;
+    color: #222222;
+}
+
+.card{
+    margin: 2rem 3rem 2rem 3rem !important;
+    padding: 1rem !important;
+    /* border: 1px solid black !important;
+    border-radius: 1rem !important; */
+    background-color: #ced4da !important;
+}
+
+.hovering:hover{
+    transition: 0.5s;
+    box-shadow: 5px 5px 10px black;
+    transform: scale(1.05);
+}
+
+
+.card-img-top{
+    border-radius: 1rem !important;
+    
+}
+
+.navbar{
+    height: auto;
+    background-color: #6c757d;
+    margin-bottom: 1rem !important;
+}
+.navbar-brand {
+font-size: 2rem !important;
+}
+
+
+.fa-compass{
+    color: #fe424d;
+    font-size: 1.8rem;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color:#6c757d;
+    
+}
+
+
+.f-icons, .f-brand, .f-cond{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+   
+    padding: 1rem !important;
+}
+.f-icons i, .f-cond a , .f-brand{
+    margin-left: 1rem;
+}
+.f-cond a{
+    text-decoration: none;
+    color: #222222;
+}
+a{
+    text-decoration: none !important;
+    color: #222222 !important;
+}
+.r{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.showcard{
+    border: none !important;
+
+}
+.showcard img{
+    height: 37rem;
+}
+
+.inline{
+    display:inline-flex;
+}
+
+
+.wrap{
+    display: flex;
+}
+
